@@ -1,4 +1,5 @@
-import AudioRecorder from './audio-recorder.vue'
+import AudioPlayer from './components/player2.vue'
+import AudioRecorder from './components/recorder.vue'
 
 export default {
   install: function (Vue) {
@@ -8,6 +9,7 @@ export default {
 
     this.installed = true
 
+    Vue.component('audio-player', AudioPlayer)
     Vue.component('audio-recorder', AudioRecorder)
   }
 }
